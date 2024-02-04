@@ -1,0 +1,44 @@
+@import url("./fonts.css");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box-noticia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px; /* Adicione um espaço entre os cartões */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card-title{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "PT Sans",sans-serif;
+}
+.btn{
+  width: 100%;
+  background-color: var(--azul-escuro) !important;
+}
+#margin-btn{
+  margin-top: 5.5rem;
+}
+
+.text-muted{
+  font-family: "Montserrat";
+  font-size: 20px;
+}

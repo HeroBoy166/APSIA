@@ -1,0 +1,31 @@
+@import url("./fonts.css");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box-noticia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px; /* Adicione um espaço entre os cartões */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-2 img{
+  height: matchparent; 
+  width: 100%;
+}

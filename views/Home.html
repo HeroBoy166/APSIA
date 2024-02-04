@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../imagens/icone.png" />
+    <link rel="stylesheet" href="../css/home_style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>APSIA</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-title">
+          <img src="../imagens/logopequena.png">
+          <a class="logo" href="./Home.html">APSIA</a>
+        </div>
+          <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+              <li><a href="./Home.html">Home</a></li>
+              <li><a href="./Noticiais.html">Noticias</a></li>
+              <li><a href="./Doenças.html">Doenças Mentais</a></li>
+              <li><a href="./Eventos.html">Eventos</a></li>
+              <li><a href="../Chat/Cadastro.php">Criar uma Conta</a></li>
+              <li><a href="../Chat/Conversas.php">Chat</a></li>
+          </ul>
+      </nav>
+  </header>
+    
+      <section class="slider">
+
+        <div class="slides">
+          <!--Radio buttons-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <!--fim-->
+
+          <!--slide imagens-->
+            <div class="slide first">
+              <img src="../imagens/assets/carrossel3.png" alt="" />
+              <div class="slide-text">
+                <p>Em momentos desafiadores, a assistência psicológica é crucial. Ela oferece suporte e orientação para superar dificuldades emocionais.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../imagens/assets/cerebro-carrossel.jpg" alt="" />
+              <div class="slide-text">
+                <p>Aqui no Apsia fornecemos assistência psicológica como um espaço acolhedor para indivíduos se unirem e compartilharem seus problemas. Aqui, encontram apoio e compreensão.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="../imagens/assets/carrossel-meca.jpg" alt="" />
+              <div class="slide-text">
+                <p>Através da união de uma comunidade solidária, somos capazes de fazer a diferença na vida das pessoas que enfrentam desafios emocionais. Juntos, proporcionamos um ambiente de apoio e crescimento</p>
+              </div>
+            </div>
+          <!--slide imagens fim-->
+          
+          <!--navigation auto-->
+          <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+
+        </div>
+
+      </section>
+
+
+    <!--<section class="">
+      <div class="center-text">
+      <a>Espaço para texto</a>
+    </section>
+  -->
+    <section class="bread-background center-h1">
+      <h1 class="custom-h1">
+        <a>No turbilhão da vida moderna, é fácil se perder nas complexidades dos nossos próprios pensamentos e emoções. A busca pelo equilíbrio emocional muitas vezes parece solitária. É aqui que entra nossa missão: proporcionar um espaço acolhedor e inclusivo para todos que buscam apoio emocional e orientação.</a>
+        <a><br>Reconhecemos que a assistência psicológica é mais do que uma necessidade; é um direito fundamental de todo ser humano. Ela oferece ferramentas para lidar com os altos e baixos da vida, capacitando indivíduos a transformar desafios em oportunidades de crescimento.</a>
+        <a>Acreditamos no poder da união para promover a cura. Ao se juntar à nossa comunidade, você terá acesso a uma rede de indivíduos empáticos e profissionais dedicados, prontos para ouvir, aconselhar e encorajar. Juntos, podemos criar um ambiente de crescimento e resiliência.</a>
+      </h1>
+    </section>
+
+    <main class="cards">
+      <section class="card contato">
+          <div class="icon">
+              <img src="../imagens/assets/bater-papo.png" alt="BatePapo">
+          </div>
+          <h3>CHAT</h3>
+          <span>Participe do nosso chat de mensagens da nossa comunidade</span>
+          <button onclick="location.href='../Chat/Cadastro.php'">Clique aqui</button>
+      </section>
+      <section class="card noticia">
+          <div class="icon">
+              <img src="../imagens/assets/noticia.png" alt="Noticias">
+          </div>
+          <h3>Noticias</h3>
+          <span>Mantenha-se informado sobre como é a situação no país sobre os Disturbios Mentais</span>
+          <button onclick="location.href='./Noticiais.html'">Saiba mais</button>
+      </section>
+      <section class="card sobre">
+          <div class="icon">
+              <img src="../imagens/assets/cerebro.png" alt="Conheça-nos">
+          </div>
+          <h3>Doenças Mentais</h3>
+          <span id="card-span">Aprofunde seu conhecimento sobre o funcionamento e os sintomas das doenças mentais mais comuns no Brasil</span>
+          <button onclick="location.href='./Doenças.html'">Saiba mais</button>
+      </section>
+  </main>
+
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>APSIA</h1>
+              <p>Acolhimento Psicológico e Suporte para a Inclusão e Autocuidado</p>
+              <p>O APSIA combina tecnologia e cuidado emocional. Nossa plataforma oferece suporte personalizado e recursos para promover seu bem-estar mental. Estamos aqui para você, a qualquer momento que precisar.</p>
+
+              <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h1>Contate-nos</h1>
+              </li>
+              <li>
+                  <a href="https://neilpatel.com/wp-content/uploads/2019/05/ilustracao-sobre-o-error-404-not-found.jpeg" class="footer-link" target="_blank">apsia@gmail.com</a>
+              </li>
+              <li>
+                  <a href="https://neilpatel.com/wp-content/uploads/2019/05/ilustracao-sobre-o-error-404-not-found.jpeg" class="footer-link" target="_blank">@ApsiaSupport</a>
+              </li>
+              <li>
+                  <a href="https://neilpatel.com/wp-content/uploads/2019/05/ilustracao-sobre-o-error-404-not-found.jpeg" class="footer-link" target="_blank">+21 96768-9145</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h1>Organizações de Apoio Psicológico</h1>
+              </li>
+              <li>
+                  <a href="https://www.cvv.org.br/" class="footer-link" target="_blank">CVV, Centro de Valorização da Vida</a>
+              </li>
+              <li>
+                  <a href="https://www.abp.org.br/" class="footer-link" target="_blank">ABP - Associação Brasileira de Psiquiatria</a>
+              </li>
+              <li>
+                  <a href="https://forum.apsia.com.br/" class="footer-link" target="_blank">Fórum Apsia - Comunidade de Apoio Psicológico</a>
+              </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h1>Inscreva-se</h1>
+
+              <p> Entre com seu e-mail para receber notificações das possiveis atualizações e noticiais sobre nossos eventos <p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                      <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2023 Todos os Direitos Reservados
+      </div>
+  </footer>
+    <script src="../javascript/home.js"></script>
+  </body>
+</html>

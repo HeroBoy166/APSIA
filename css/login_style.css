@@ -1,0 +1,132 @@
+@import url("./fonts.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-style);
+  padding: 0;
+  margin: 0;
+  background:rgba(0, 0, 0, 0.8);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in;
+  background: #242026;
+  box-shadow: 0 5px 25px rgba(224, 195, 134, 0.8);
+  border-radius: 1rem;
+}
+#cadastro{
+  height: 39rem;
+}
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: var(--cor-fonte);
+  text-align: center;
+}
+
+.login-box .user-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: var(--cor-fonte);
+  margin-bottom: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #be8040;
+  background: transparent;
+  outline: none;
+}
+
+.login-box .user-box label {
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--cor-fonte);
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -85px;
+  left: 0;
+  color: var(--cor-fonte);
+  font-size: 15px;
+}
+
+#submit {
+  padding: 10px 20px;
+  color: var(--cor-font-leve);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  border: 1px solid var(--cor-fonte);
+  margin: auto;
+}
+
+#submit:hover {
+  background: var(--cor-fonte);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--cor-fonte), 0 0 25px var(--cor-fonte), 0 0 50px var(--cor-fonte),
+    0 0 100px var(--cor-fonte);
+}
+
+.button-form {
+  display: flex;
+  flex-direction: row;
+
+}
+#register {
+  padding-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--cor-font-leve);
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+#register a {
+  margin: auto;
+  color: var(--cor-fonte);
+  text-decoration: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  .login-box{
+    width: 18rem;
+  }
+  #cadastro{
+    height: 34rem;
+  }
+  .login-box .user-box input{
+    padding: 3px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .login-box{
+    width: 17rem;
+  }
+  #cadastro{
+    height: 33rem;
+  }
+  .login-box .user-box input{
+    padding: 0px 10px;
+  }
+}
